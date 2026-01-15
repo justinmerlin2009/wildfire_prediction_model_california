@@ -14,6 +14,24 @@
 
 ---
 
+## GitHub Repository
+
+**URL**: https://github.com/justinmerlin2009/wildfire_prediction_model_california
+
+**Security Audit (January 2026)**: This repository has been audited and contains NO sensitive information:
+- No passwords, API keys, or tokens
+- No private SSH keys
+- No personal email addresses in code
+- No phone numbers or private addresses
+- All data files are from public CAL FIRE sources
+
+**Large Files Excluded** (via `.gitignore`):
+- GeoPackage data files (133 MB+) - download from CAL FIRE FRAP
+- Executed notebooks (40 MB) - regenerate locally
+- Interactive HTML maps (35 MB+) - regenerate locally
+
+---
+
 ## Project Phases
 
 ### Phase 1: Exploratory Data Analysis (COMPLETE)
