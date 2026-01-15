@@ -1,0 +1,46 @@
+name: wildfire
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.11
+
+  # Data manipulation
+  - pandas>=2.0
+  - numpy>=1.24
+  - pyarrow>=14.0
+
+  # Geospatial
+  - geopandas>=0.14
+  - pyproj>=3.6
+  - shapely>=2.0
+  - fiona>=1.9
+  - rasterio>=1.3
+
+  # Visualization
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  - folium>=0.14
+  - contextily>=1.3
+  - plotly>=5.18
+  - kaleido>=0.2        # For Plotly static export
+
+  # Statistical analysis
+  - scipy>=1.11
+  - scikit-learn>=1.3
+  - statsmodels>=0.14   # STL decomposition, statistical tests
+
+  # Jupyter environment
+  - jupyterlab>=4.0
+  - ipywidgets>=8.0     # For interactive widgets
+  - notebook>=7.0
+
+  # Utilities
+  - tqdm>=4.65          # Progress bars
+  - requests>=2.31      # HTTP requests
+
+  # pip dependencies (for packages not in conda-forge)
+  - pip
+  - pip:
+    - pymannkendall>=1.4  # Mann-Kendall trend test
