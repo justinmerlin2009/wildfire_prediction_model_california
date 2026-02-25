@@ -35,3 +35,12 @@ FIGURE_FORMAT = "png"
 # Fire size thresholds (acres)
 MEGA_FIRE_THRESHOLD = 100000  # 100K+ acres = mega-fire
 LARGE_FIRE_THRESHOLD = 10000  # 10K+ acres = large fire
+
+# MTBS Dataset
+MTBS_FOD_PATH = DATA_DIR / "Fireignition_points" / "mtbs_fod_pts_data" / "mtbs_FODpoints_DD.shp"
+CRS_NAD83 = "EPSG:4269"  # NAD83 (MTBS native CRS)
+MTBS_WESTERN_MIN_ACRES = 1000
+MTBS_EASTERN_MIN_ACRES = 500
+MTBS_NODATA_SENTINEL = {-9999, 9999}
+MTBS_START_YEAR = 1984
+MTBS_END_YEAR = 2024

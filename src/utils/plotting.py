@@ -179,3 +179,57 @@ def format_acres(value):
         return f"{value/1_000:.1f}K"
     else:
         return f"{value:.0f}"
+
+
+def get_severity_colors():
+    """
+    Get consistent color mapping for MTBS burn severity classes.
+
+    Returns
+    -------
+    dict
+        Severity class to color mapping (Green -> Yellow -> Orange -> Red).
+    """
+    return {
+        "Increased Greenness": "#2ECC71",  # Green
+        "Unburned/Low": "#F1C40F",          # Yellow
+        "Low": "#F39C12",                    # Orange-Yellow
+        "Moderate": "#E67E22",               # Orange
+        "High": "#E74C3C",                   # Red
+    }
+
+
+def get_incid_type_colors():
+    """
+    Get consistent color mapping for MTBS incident types.
+
+    Returns
+    -------
+    dict
+        Incident type to color mapping.
+    """
+    return {
+        "Wildfire": "#E63946",            # Red
+        "Prescribed Fire": "#457B9D",     # Blue
+        "Wildland Fire Use": "#2A9D8F",   # Teal
+        "Unknown": "#95A5A6",             # Gray
+    }
+
+
+def get_asmnt_type_colors():
+    """
+    Get consistent color mapping for MTBS assessment types.
+
+    Returns
+    -------
+    dict
+        Assessment type to color mapping (SS variants lighter).
+    """
+    return {
+        "Initial": "#2980B9",             # Blue
+        "Initial (SS)": "#85C1E9",        # Light Blue
+        "Extended": "#E74C3C",            # Red
+        "Extended (SS)": "#F1948A",       # Light Red
+        "Emergency": "#F39C12",           # Orange
+        "Emergency (SS)": "#F8C471",      # Light Orange
+    }
