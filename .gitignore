@@ -82,3 +82,9 @@ ENV/
 *.tmp
 *.temp
 *.log
+
+# Added 2026-10-20 (migration): large raster datasets stay local (files up to 3 GB; GitHub limit 100 MB)
+Datasets/Topography/
+Datasets/Vegetation/
+Datasets/Vegetation_CONUS/
+notebooks/.virtual_documents/
